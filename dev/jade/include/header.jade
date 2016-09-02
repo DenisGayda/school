@@ -1,0 +1,30 @@
+header.header.wraper
+	.header__content
+		.header__content_left
+			.header__logo
+				a(href="index.html")
+			+addList({'Woman':'woman.html', 'Men':'men.html', 'Kids':'kids.html', 'Comming Soon':'commingSoon.html', 'About':'about.html'}, 'menu__list', 'menu__list_item')
+		.header__content_right
+			.header__user
+				.header_autorize
+					- var user = 'Denis'
+					if user
+						span Hi, #{user} (
+						a(href='index.html').userTrue logout
+						span )
+					else 
+						a(href="index.html") Log In
+				.header__cart
+					- var countBasket = 10
+					a(href="index.html") Basket 
+					span (#{countBasket})
+				.header__search
+					- var searchActive = false
+					if searchActive
+						form.searchActive
+							input(type='search' placeholder='Search something...')
+							input(type='submit')
+					else
+						form.searchPasive
+							input(type='submit')
+

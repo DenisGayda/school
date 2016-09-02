@@ -1,0 +1,39 @@
+extends include/template
+
+block title
+	title Men outerwear
+block link
+	+addCss(['style', 'category'])
+block content
+	.wraper
+		+addressBar (['HOME', 'men', 'outerwear'])
+	main.content.wraper
+		section.content__section
+			h1.category__title Men outerwear
+			.content__line
+				+addProduct([{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top1'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top2'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top3'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top4'}])
+			.content__line
+				+addProduct([{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top1'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top2'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top3'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top4'}])
+			.content__line
+				+addProduct([{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top1'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top2'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top3'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top4'}])
+			.content__line
+				+addProduct([{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top1'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top2'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top3'},
+				{'href':'menOuterwearProduct.html', 'src':'image/menOuterwearL.jpg', 'price':'98.85$', 'name':'Double-Layered Top4'}])
+		section.lookbook__section
+			p.lookbook__section_title Check our lookbook
+			.lookbook__slider
+				button.lookbook-slider__botton_left &#706
+				.lookbook-slider__content
+				button.lookbook-slider__botton_right &#707	
+

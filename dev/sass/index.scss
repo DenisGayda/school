@@ -1,0 +1,83 @@
+@import './import/mixin.scss';
+
+.content {
+	.content__section1 {
+		text-align: center;
+		padding-top: 167px;
+		.content__section1_title{
+			text-align: center;
+			margin-bottom: 34px;
+			@include fontArial(4.5em, 1em, #303030);
+			text-transform: uppercase;
+		}
+		.content__section1_text {
+			text-align: center;
+			@include fontHelvetica(1.5em, 1.5em, #606060);
+			font-style: italic;
+			font-weight: lighter;
+		}
+		.content__section1__button {
+			display: inline-block;
+			width: 229px;
+			height: 60px;
+			border: 1px solid #959595;
+			@include fontArial(0.875em, 4.2857em, #303030);
+			text-transform: uppercase;
+			margin-top: 67px;
+			cursor: pointer;
+		}
+	}
+	.content__section2 {
+		margin-top: 150px;
+	}
+	.content__section3 {
+		text-align: center;
+		margin-top: 145px;
+		padding-bottom: 145px;
+		.content__section3_title{
+			text-align: center;
+			@include fontArial(2.25em, 1em, #303030);
+			text-transform: uppercase;
+		}
+		.content__section3_text {
+			margin-top: 19px;
+			text-align: center;
+			@include fontHelvetica(1.125em, 1em, #606060);
+			font-style: italic;
+			font-weight: lighter;
+		}
+		.content__section3_form {
+			margin-top: 54px;
+			.section3-form__email {
+				vertical-align: top;
+				width: 475px;
+				height: 56px;
+				padding-left: 25px;
+				&::-webkit-input-placeholder{
+					color: #606060;
+					font-size: 16px;
+				}
+				&::-moz-placeholder{
+					color: #606060;
+					font-size: 16px;
+				}
+				&:-moz-placeholder{
+					color: #606060;
+					font-size: 16px;
+				}
+				&:-ms-input-plaseholder{
+					color: #606060;
+					font-size: 16px;
+				}
+			}
+			.section3-form__submit {
+				color: #fff;
+				font-size: 1em;
+				width: 95px;
+				height: 56px;
+				border: none;
+				background-color: #f68236;
+			}
+		}
+	}
+}

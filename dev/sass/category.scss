@@ -1,0 +1,57 @@
+@import './import/mixin.scss';
+.content {
+	padding-top: 100px;
+	text-align: center;
+	.content__section {
+		padding-bottom: 160px;
+		.content__title {
+			text-align: center;
+			color: #303030;
+			font-size: 36px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+		}
+		.content__link {
+			color: #606060;
+			font-family: Georgia;
+			font-size: 18px;
+			font-style: italic;
+			position: relative;
+			cursor: pointer;
+			text-decoration: underline;
+			&:after {
+				content: "\3e";
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				right: -20px; 
+			}
+		}
+		.category {
+			display: flex;
+			justify-content: space-around;
+			.product {
+				img {
+					display: inline-block;
+					width: 208px;
+					height: 256px;
+					border: 1px solid #e5e5e5;
+					margin: 64px 0 34px 0;
+					cursor: pointer;
+				}
+				.name,
+				.price {
+					@include fontHelvetica(14px, 24px, #303030);
+				}
+				.name {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+.category__title {
+	@include fontHelvetica(36px, 36px, #606060);
+	text-transform: uppercase;
+}

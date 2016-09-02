@@ -1,0 +1,29 @@
+extends include/template
+
+block title
+	title Kids coats product
+block link
+	+addCss(['style', 'product'])
+block content
+	.wraper
+		+addressBar (['HOME', 'kids', 'outwear', 'product'])
+	main.content.wraper
+		section.content__image
+			img(src='image/kidsOuterwear.jpg')
+		section.content__section
+			p.cottent__section_title FLORAL PLIMSOLL
+			p.content__section_article Article number: 14210160762
+			p.content__section_price $ 99,95
+			p.content__section_text Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.Maecenas malesuada elit lectus felis, malesuada ultricies. 
+			form.content__section_form
+				p.content__form_title
+				+addCheckbox([38, 39, 40, 41, 42])
+				input(type='submit' value='Add do cart').content__form_submit
+		section.lookbook__section
+					p.lookbook__section_title You may also like
+					.lookbook__slider
+						button.lookbook-slider__botton_left &#706
+						.lookbook-slider__content
+						button.lookbook-slider__botton_right &#707
+
+

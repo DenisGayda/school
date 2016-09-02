@@ -1,0 +1,37 @@
+mixin addCss(arg)
+	each val in arg
+		link(rel='stylesheet' href='css/#{val}.css')
+
+mixin addList(arg, arg1, arg2)
+	ul(class=arg1)
+		each val,index in arg
+			li(class=arg2): a(href= val) #{index}
+
+mixin addressBar(arg)
+	.addressBar
+		each val in arg
+			- 
+				if(val == 'HOME')
+					a(href='index.html').addressBar__link #{val} 
+				else
+					span / 
+					a(href='index.html').addressBar__link #{val}
+
+mixin addProduct(arr, arg1, arg2)
+	.category
+		each val in arr
+			.product
+				- var src= val.src
+				- var price= val.price
+				- var name= val.name
+				- var href= val.href
+				a(href='#{href}')
+					img(src='#{src}')
+				p.name #{name}	
+				p.price #{price}
+
+mixin addCheckbox(arr)
+	each val in arr
+		label
+			input(type='radio' name='radio')
+			span= val

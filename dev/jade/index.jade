@@ -1,0 +1,40 @@
+extends include/template
+
+block title
+	title Home
+block link
+	+addCss(['style', 'index'])
+block content
+	main.content.wraper
+		section.content__section1
+			p.content__section1_title Hazy Shade of spring
+			p.content__section1_text Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
+			a.content__section1__button check new arrivals
+		section.content__section2
+			img(src="image/Bigblock.png")
+			//- .section2__block
+			//- 	a(href='#').section2__block_rectangle
+			//- 		img()
+			//- 	a(href='#').section2__block_square
+			//- .section2__block
+			//- 	a(href='#').section2__block_square
+			//- 	a(href='#').section2__block_square
+			//- 	a(href='#').section2__block_square
+			//- .section2__block
+			//- 	a(href='#').section2__block_square
+			//- 	a(href='#').section2__block_square
+			//- 	a(href='#').section2__block_square
+			//- .section2__block
+			//- 	a(href='#').section2__block_square
+			//- 	a(href='#').section2__block_rectangle
+		section.content__section3
+			p.content__section3_title sign up to receive our updates
+			p.content__section3_text Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+			form.content__section3_form
+				input(type="email" placeholder="Your e-mail...").section3-form__email
+				input(type='submit' value="add").section3-form__submit
+		section.lookbook__section
+			.lookbook__slider
+				button.lookbook-slider__botton_left &#706
+				.lookbook-slider__content
+				button.lookbook-slider__botton_right &#707

@@ -1,0 +1,55 @@
+.footer {
+	.footer__content {
+		padding: 45px 0;
+		margin-bottom: 80px;
+		.footer__site,
+		.footer__shop,
+		.footer__social {
+			padding-left: 20px;
+			border-left: 1px solid #eaeaea;
+		}
+		display: flex;
+		justify-content: space-between;
+		.footer__content_title {
+			@include fontArial(0.875em, 2.5em, #000);
+			font-weight: bold;
+		}
+		.menu__list {
+			.menu__list_item {
+				display: block;
+				a {
+					@include fontArial(0.75em, 2em, #000);
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.footer__social {
+			margin-right: 62px;
+			.footer__social_text {
+				@include fontArial(0.75em, 2em, #000);
+				max-width: 217px;
+			}
+			.footer__social_icons {
+				a {
+					display: inline-block;
+					width: 32px;
+					height: 32px;
+					margin-right: 14px;
+					border: 1px solid #606060;
+				}
+				.footer__social_twitter {
+					background: transparent url(../image/twitter.png) no-repeat center center;
+				}
+				.footer__social_facebook {
+					background: transparent url(../image/facebook.png) no-repeat center center;
+				}
+				.footer__social_instagram {
+					background: transparent url(../image/instagram.png) no-repeat center center;
+				} 
+			}
+		}
+	}
+}

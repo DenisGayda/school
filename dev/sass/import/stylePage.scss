@@ -1,0 +1,61 @@
+.wraper {
+	max-width: 1244px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 0 32px;
+}
+body {
+	background-color: #e5e5e5;
+}
+
+.addressBar {
+	a {
+		@include fontArial(0.75em, 3.75em, #606060);
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	span {
+		display: inline-block;
+		padding: 0 10px;
+	}
+}
+
+.lookbook__section {
+	padding: 59px 0 30px;
+	.lookbook__section_title {
+		@include fontHelvetica(24px, 27px, #606060);
+		font-style: italic;
+		margin-bottom: 42px;
+		text-align: center;
+	}
+	.lookbook__slider {
+		display: flex;
+		justify-content: space-around;
+		.lookbook-slider__content {
+			width: 1102px;
+			height: 118px;
+			background-color: #bbb;
+		}
+		.lookbook-slider__botton_left,
+		.lookbook-slider__botton_right {
+			width: 39px;
+			height: 118px;
+			font-size: 40px;
+			line-height: 118px;
+			color: #fff;
+			&:hover {
+				color: $blue;
+			}
+		}
+		.lookbook-slider__botton_left {
+			background-color: #e4e4e4;
+		}
+		.lookbook-slider__botton_right {
+			background-color: #e4e4e4;
+		}
+	}
+}
+
